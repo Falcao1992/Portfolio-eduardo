@@ -19,7 +19,7 @@ class HeaderCarousel extends Component {
         <div className="slide-container">
           <img
             className="slide__img kenburns-top-right"
-            src="https://previews.123rf.com/images/scyther5/scyther51605/scyther5160500017/56962905-photographe-appareil-photo-moniteur-moniteur-design-ordinateur-portable-photo-%C3%A9cran-photographie-stock.jpg"
+            src="https://www.valorecia.com/wp-content/uploads/2018/11/nouvelles-technologies.jpg"
             alt="Bureau Desing"
           />
           <p className="legend-slide">voici la legende numero 1</p>
