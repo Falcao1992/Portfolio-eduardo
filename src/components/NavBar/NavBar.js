@@ -3,26 +3,25 @@ import { bubble as Menu } from "react-burger-menu";
 import "./NavBar.css";
 
 class NavBar extends React.Component {
-  showSettings(event) {
-    event.preventDefault();
-  }
+  
 
   render() {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
       <Menu>
         <a id="home" className="menu-item" href="/">
-          Home
+          Acceuil
         </a>
-        <a id="about" className="menu-item" href="/">
-          About
+        <a id="projets" className="menu-item" href="#projets">
+          Projets
+        </a>
+        <a id="contact" className="menu-item" href="/">
+          A Propos
         </a>
         <a id="contact" className="menu-item" href="/">
           Contact
         </a>
-        <a onClick={this.showSettings} className="menu-item--small" href="/">
-          Settings
-        </a>
+        
       </Menu>
     );
   }
