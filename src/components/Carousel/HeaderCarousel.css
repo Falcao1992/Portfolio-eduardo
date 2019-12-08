@@ -10,7 +10,7 @@
   z-index: 1000;
 }
 
-.legend-slide {
+/*.legend-slide {
   color: white;
   bottom: 50%;
   width: 100%;
@@ -23,7 +23,7 @@
   padding: 10px;
   margin: 0 50px;
   text-align: center;
-}
+}*/
 
 .kenburns-top-right {
   animation: kenburns-top-right 10s linear infinite alternate both;
