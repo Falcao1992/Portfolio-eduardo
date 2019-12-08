@@ -27,7 +27,7 @@ class HeaderCarousel extends Component {
         <div className="slide-container">
           <img
             className="slide__img kenburns-top-right"
-            src="https://st3.depositphotos.com/1607243/17782/i/1600/depositphotos_177826624-stock-photo-computer-magazine-design-screen-modern.jpg"
+            src="https://www.alain-bensoussan.com/wp-content/uploads/2017/05/34226189.jpg"
             alt="Bureau Blanc"
           />
           <p className="legend-slide">voici la Legend 2</p>
