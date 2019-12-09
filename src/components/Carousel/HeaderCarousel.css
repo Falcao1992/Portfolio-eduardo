@@ -1,0 +1,26 @@
+.slide__img {
+   height: 100vh;
+   object-fit: cover;
+}
+.slide-container {
+background-position: bottom;
+}
+
+.selected {
+    z-index: 1000;
+}
+
+.kenburns-top-right {
+	animation: kenburns-top-right 8s linear infinite alternate both;
+}
+@keyframes kenburns-top-right {
+  0% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 54% 16%;
+  }
+  100% {
+    transform: scale(1.25) translate(20px, -15px);
+    transform-origin: right top;
+  }
+}
+  
