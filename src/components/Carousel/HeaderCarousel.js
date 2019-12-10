@@ -16,21 +16,21 @@ class HeaderCarousel extends Component {
         transitionTime={2000}
         showIndicators={false}
       >
-        <div className="slide-container">
+        <div className="slide-container" id="home">
           <img
             className="slide__img kenburns-top-right"
-            src="https://previews.123rf.com/images/scyther5/scyther51605/scyther5160500017/56962905-photographe-appareil-photo-moniteur-moniteur-design-ordinateur-portable-photo-%C3%A9cran-photographie-stock.jpg"
+            src="https://www.valorecia.com/wp-content/uploads/2018/11/nouvelles-technologies.jpg"
             alt="Bureau Desing"
           />
-          <p className="legend-slide">voici la legende numero 1</p>
+          <p className="legend-slide"></p>
         </div>
         <div className="slide-container">
           <img
             className="slide__img kenburns-top-right"
-            src="git push --set-upstream origin feature/displayProject"
+            src="https://www.alain-bensoussan.com/wp-content/uploads/2017/05/34226189.jpg"
             alt="Bureau Blanc"
           />
-          <p className="legend-slide">voici la Legend 2</p>
+          <p className="legend-slide"></p>
         </div>
         <div className="slide-container">
           <img
@@ -38,7 +38,7 @@ class HeaderCarousel extends Component {
             src="https://tmv.tmvtours.fr/wp-content/uploads/sites/tours/NEWS_WILDSCHOOL.jpg"
             alt="Wild Code School"
           />
-          <p className="legend-slide"> voici la Legend 3</p>
+          <p className="legend-slide"></p>
         </div>
       </Carousel>
     );
