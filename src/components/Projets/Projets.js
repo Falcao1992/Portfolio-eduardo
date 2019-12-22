@@ -4,10 +4,29 @@ import mame from "./img/MAME screenshot.PNG";
 import wildSpace from "./img/Wild-Space screenshot.PNG";
 import horrorTeaser from "./img/Horror-Teaser screenshot.PNG";
 import miniGameNoel from "./img/mini-game-noel.PNG";
-
+import simpleParallax from "simple-parallax-js";
 import gitHub from "./img/logo git_hub.png";
 
 class Projets extends Component {
+  constructor(props) {
+    super(props);
+    this.myRefMame = React.createRef();
+    this.myRefSpace = React.createRef();
+    this.myRefHorror = React.createRef();
+    this.myRefMiniGames = React.createRef();
+  }
+
+  componentDidMount() {
+    new simpleParallax(this.myRefMame.current, {
+      delay: 1.6,
+      transition: "cubic-bezier(0,0,0,1)"
+    });
+    new simpleParallax(this.myRefSpace.current, { overflow: true });
+    new simpleParallax(this.myRefHorror.current, { orientation: "right" });
+    new simpleParallax(this.myRefMiniGames.current, { scale: 1.4 });
+
+    console.log(this.myRefMame);
+  }
   render() {
     return (
       <div className="Projets__content">
@@ -23,7 +42,12 @@ class Projets extends Component {
             <img src={gitHub} className="logo" alt="logo git-hub" />
           </a>
 
-          <img className="projet-img" src={mame} alt="projet Mame" />
+          <img
+            className="projet-img"
+            ref={this.myRefMame}
+            src={mame}
+            alt="projet Mame"
+          />
         </div>
         <div className="projet-content">
           <a
@@ -36,7 +60,12 @@ class Projets extends Component {
             <img src={gitHub} className="logo" alt="logo git-hub" />
           </a>
 
-          <img className="projet-img" src={wildSpace} alt="projet Wild Space" />
+          <img
+            className="projet-img"
+            ref={this.myRefSpace}
+            src={wildSpace}
+            alt="projet Wild Space"
+          />
         </div>
         <div className="projet-content">
           <a
@@ -50,6 +79,7 @@ class Projets extends Component {
           </a>
           <img
             className="projet-img"
+            ref={this.myRefHorror}
             src={horrorTeaser}
             alt="projet Horror movies"
           />
@@ -66,6 +96,7 @@ class Projets extends Component {
           </a>
           <img
             className="projet-img"
+            ref={this.myRefMiniGames}
             src={miniGameNoel}
             alt="Mini jeux de Noel"
           />
