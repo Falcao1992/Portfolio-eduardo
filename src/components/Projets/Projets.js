@@ -3,6 +3,8 @@ import "./Projets.css";
 import mame from "./img/MAME screenshot.PNG";
 import wildSpace from "./img/Wild-Space screenshot.PNG";
 import horrorTeaser from "./img/Horror-Teaser screenshot.PNG";
+import miniGameNoel from "./img/mini-game-noel.PNG";
+
 import gitHub from "./img/logo git_hub.png";
 
 class Projets extends Component {
@@ -50,6 +52,22 @@ class Projets extends Component {
             className="projet-img"
             src={horrorTeaser}
             alt="projet Horror movies"
+          />
+        </div>
+        <div className="projet-content">
+          <a
+            className="projet__lien"
+            href="https://mini-game-noel.netlify.com/"
+          >
+            Mini Game Noel <br />
+          </a>
+          <a href="https://github.com/Falcao1992/hackaton-noel">
+            <img src={gitHub} className="logo" alt="logo git-hub" />
+          </a>
+          <img
+            className="projet-img"
+            src={miniGameNoel}
+            alt="Mini jeux de Noel"
           />
         </div>
       </div>
