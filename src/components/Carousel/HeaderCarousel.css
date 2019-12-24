@@ -1,3 +1,7 @@
+.constainer-caroussel{
+  position: relative;
+
+}
 .slide__img {
   height: 100vh;
   object-fit: cover;
@@ -12,35 +16,15 @@
 }
 
 .legend-slide {
+  position: absolute; /* postulat de départ */
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
   color: white;
-  bottom: 50%;
-  left: 36%;
   font-size: 1.5rem;
   background-color: rgba(0, 0, 0, 0.507);
   text-transform: uppercase;
   font-weight: 700;
-  position: absolute;
   border-radius: 20px;
   padding: 10px;
   text-align: center;
-}
-
-.tracking-in-contract-bck {
-  animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.61, 0.355, 1)
-    both;
-}
-
-@keyframes tracking-in-contract-bck {
-  0% {
-    letter-spacing: 1em;
-    transform: translateZ(400px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
-  }
 }
