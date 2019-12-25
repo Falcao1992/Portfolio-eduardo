@@ -12,6 +12,7 @@ import logoNetlify from "./img/logoNetlify.png";
 class Projets extends Component {
   constructor(props) {
     super(props);
+    this.myRef = React.createRef();
     this.state = {
       projets: [
         {
@@ -63,6 +64,7 @@ class Projets extends Component {
   render() {
     const { projets } = this.state;
     return (
+      
       <div className="projets__content">
         <div className="projets__texte">
           <h1 id="projets">Mes Projets</h1>
@@ -116,7 +118,9 @@ class Projets extends Component {
               </div>
             ))}
           </div>
+          
         </div>
+      
       </div>
     );
   }
