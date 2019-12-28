@@ -8,6 +8,7 @@ import horrorTeaser from "./img/Horror-Teaser screenshot.PNG";
 import miniGameNoel from "./img/mini-game-noel.PNG";
 import logoGitHub from "./img/logo git_hub.png";
 import logoNetlify from "./img/logoNetlify.png";
+import { Controller, Scene } from "react-scrollmagic";
 
 class Projets extends Component {
   constructor(props) {
@@ -64,16 +65,17 @@ class Projets extends Component {
   render() {
     const { projets } = this.state;
     return (
-      
-      <div className="projets__content">
-        <div className="projets__texte">
+      <Controller>
+         <Scene triggerElement={".boxProjets"} classToggle={[".boxProjets", "fade-inProjets"]} indicators={true}>
+      <div className="projets__content  ">
+        <div className="projets__texte boxProjets">
           <h1 id="projets">Mes Projets</h1>
           <p>
-            Voici un apercu des differents projets sur lesquelle j'ai pu travailler depuis
-            le début de mon apprentissage.
+            Voici un apercu des differents projets sur lesquelle j'ai pu
+            travailler depuis le début de mon apprentissage.
           </p>
         </div>
-        <div className="wrapper__content">
+        <div className="wrapper__content boxProjets ">
           <div className="wrapper">
             {projets.map(projet => (
               <div key={projet.id} className={`item__6-0${projet.id}`}>
@@ -118,10 +120,10 @@ class Projets extends Component {
               </div>
             ))}
           </div>
-          
         </div>
-      
       </div>
+      </Scene>
+      </Controller>
     );
   }
 }
