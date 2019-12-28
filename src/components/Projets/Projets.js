@@ -66,7 +66,7 @@ class Projets extends Component {
     const { projets } = this.state;
     return (
       <Controller>
-         <Scene triggerElement={".boxProjets"} classToggle={[".boxProjets", "fade-inProjets"]} indicators={true}>
+         <Scene triggerElement={".boxProjets"} classToggle={[".boxProjets", "fade-inProjets"]} reverse={false} offset={100} indicators={true}>
       <div className="projets__content  ">
         <div className="projets__texte boxProjets">
           <h1 id="projets">Mes Projets</h1>

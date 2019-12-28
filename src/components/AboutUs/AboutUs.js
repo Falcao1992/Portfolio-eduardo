@@ -6,7 +6,7 @@ class AboutUs extends React.Component {
   render() {
     return (
       <Controller>
-        <Scene triggerElement={".box1"} classToggle={[".box1", "fade-in"]} indicators={true}>
+        <Scene triggerElement={".box1"} classToggle={[".box1", "fade-in"]} indicators={true}  offset={70} reverse={false}>
           <div class="img1">
             <div class="box box1">
               <h2>Lorem ipsum dolor sit amet.</h2>
@@ -23,7 +23,7 @@ class AboutUs extends React.Component {
           </div>
         </Scene>
 
-        <Scene triggerElement={".box2"} classToggle={[".box2", "fade-in"]}>
+        <Scene triggerElement={".box2"} classToggle={[".box2", "fade-in"]} offset={70} reverse={false}>
           <div class="img2">
             <div class="box box2">
               <h2>Lorem ipsum dolor sit amet.</h2>
@@ -40,7 +40,7 @@ class AboutUs extends React.Component {
           </div>
         </Scene>
 
-        <Scene triggerElement={".box3"} classToggle={[".box3", "fade-in"]}>
+        <Scene triggerElement={".box3"} classToggle={[".box3", "fade-in"]} offset={70} reverse={false}>
           <div class="img3">
             <div class="box box3">
               <h2>Lorem ipsum dolor sit amet.</h2>
