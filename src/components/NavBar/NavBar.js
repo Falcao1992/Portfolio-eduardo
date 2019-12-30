@@ -12,11 +12,11 @@ class NavBar extends React.Component {
         <a className="menu-item" href="#home">
           Acceuil
         </a>
+        <a className="menu-item" href="#aboutUs">
+          Qui suis-je
+        </a>
         <a className="menu-item" href="#projets">
           Projets
-        </a>
-        <a className="menu-item" href="#aboutUs">
-          A Propos
         </a>
         <a id="contact" className="menu-item" href="/">
           Contact
