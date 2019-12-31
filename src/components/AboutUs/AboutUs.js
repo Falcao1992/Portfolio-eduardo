@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Controller, Scene } from "react-scrollmagic";
-import { TweenMax, Bounce } from "gsap";
+import { gsap, TweenMax, Bounce } from "gsap";
 
 import "./AboutUs.css";
 import cv from "./img/CV.png";
@@ -29,49 +29,49 @@ function AboutUs() {
   const handleAnimation = e => {
     console.log("dans la fonction annimation");
 
-    TweenMax.to(logoCssRef, 3.8, {
+    gsap.to(logoCssRef, 3.8, {
       gridColumn: 5,
       gridRow: 1,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    TweenMax.to(logoHtmlRef, 3.8, {
+    gsap.to(logoHtmlRef, 3.8, {
       gridColumn: 1,
       gridRow: 1,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    TweenMax.to(logoReactRef, 3.8, {
+    gsap.to(logoReactRef, 3.8, {
       gridColumn: 1,
       gridRow: 2,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    TweenMax.to(logoNodeRef, 3.8, {
+    gsap.to(logoNodeRef, 3.8, {
       gridColumn: 5,
       gridRow: 2,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    TweenMax.to(logoPhaserRef, 3.8, {
+    gsap.to(logoPhaserRef, 3.8, {
       gridColumn: 1,
       gridRow: 3,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    TweenMax.to(logoSqlRef, 3.8, {
+    gsap.to(logoSqlRef, 3.8, {
       gridColumn: 5,
       gridRow: 3,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    TweenMax.to(logoText, 3.8, {
+    gsap.to(logoText, 3.8, {
       opacity: 1,
       ease: Bounce.easeOut
     });
