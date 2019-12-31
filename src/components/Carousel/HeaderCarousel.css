@@ -1,0 +1,38 @@
+.constainer-caroussel{
+  position: relative;
+
+}
+.slide__img {
+  height: 100vh;
+  object-fit: cover;
+}
+.slide-container {
+  height: 100%;
+  background-position: bottom;
+}
+
+.selected {
+  z-index: 1000;
+}
+
+.legend-slide {
+  position: absolute; /* postulat de départ */
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.115);
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.legend-slide span {
+  display: inline-block;
+  font-size: 3.9rem;
+}
+
