@@ -3,7 +3,7 @@
 
 }
 .slide__img {
-  height: 50vh;
+  height: 100vh;
   object-fit: cover;
 }
 .slide-container {

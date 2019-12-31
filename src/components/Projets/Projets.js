@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import "./Projets.scss";
 import wildCircus from "./img/wild-Circus.png";
 import locationAppartements from "./img/location-appartements.png";
-import mame from "./img/MAME screenshot.PNG";
-import wildSpace from "./img/Wild-Space screenshot.PNG";
-import horrorTeaser from "./img/Horror-Teaser screenshot.PNG";
-import miniGameNoel from "./img/mini-game-noel.PNG";
-import logoGitHub from "./img/logo git_hub.png";
+import mame from "./img/MAME-screenshot.png";
+import wildSpace from "./img/Wild-Space-screenshot.png";
+import horrorTeaser from "./img/Horror-Teaser-screenshot.png";
+import miniGameNoel from "./img/mini-game-noel.png";
+import logoGitHub from "./img/logo-git_hub.png";
 import logoNetlify from "./img/logoNetlify.png";
 import { Controller, Scene } from "react-scrollmagic";
 
