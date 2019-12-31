@@ -1,6 +1,5 @@
-.constainer-caroussel{
+.constainer-caroussel {
   position: relative;
-
 }
 .slide__img {
   height: 100vh;
@@ -16,23 +15,25 @@
 }
 
 .legend-slide {
+  font-family: "Poppins", sans-serif;
   position: absolute; /* postulat de départ */
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
   color: white;
-  font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.115);
+  font-size: 1.7rem;
+  background-color: rgba(0, 0, 0, 0.215);
   text-transform: uppercase;
   font-weight: 700;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 20px;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   cursor: pointer;
 }
 
 .legend-slide span {
+  font-family: "Poppins", sans-serif;
   display: inline-block;
-  font-size: 3.9rem;
+  font-size: 1.7rem;
 }
-

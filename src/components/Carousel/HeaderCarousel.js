@@ -16,10 +16,10 @@ class HeaderCarousel extends Component {
     let letters = Array.from(e.target.childNodes);
     for (let i = 0; i < letters.length; i++) {
       TweenMax.to(letters[i], 1, {
-        x: Math.floor(Math.random() * 500 - 250),
-        y: Math.floor(Math.random() * 500 - 250),
-        z: Math.floor(Math.random() * 500 - 250),
-        rotation: Math.floor(Math.random() * 500 - 250),
+        x: Math.floor(Math.random() * 300 - 150),
+        y: Math.floor(Math.random() * 200 - 100),
+        z: Math.floor(Math.random() * 300 - 150),
+        rotation: Math.floor(Math.random() * 300 - 150),
         ease: Circ.easeOut
       });
     }
@@ -55,34 +55,37 @@ class HeaderCarousel extends Component {
       >
         <div className="slide-container">
           <img className="slide__img" src={slide1} alt="Qui suis-je" />
-          <p
-            className="legend-slide tracking-in-contract-bck"
-            onMouseEnter={this.explosionIn}
-            onMouseLeave={this.explosionOut}
-          >
-            {" "}
-            qui <br /> suis-je <br /> ?
-          </p>
+          
+            <p
+              className="legend-slide tracking-in-contract-bck"
+              onMouseEnter={this.explosionIn}
+              onMouseLeave={this.explosionOut}
+            >
+              {" "}
+              qui&nbsp;suis&nbsp;je&nbsp;?
+            </p>
+          
         </div>
         <div className="slide-container" id="home">
           <img className="slide__img" src={slide2} alt="Mes Projets" />
-          <p
-            className="legend-slide tracking-in-contract-bck"
-            onMouseEnter={this.explosionIn}
-            onMouseLeave={this.explosionOut}
-          >
-            mes <br /> projets
-          </p>
+            <p
+              className="legend-slide tracking-in-contract-bck"
+              onMouseEnter={this.explosionIn}
+              onMouseLeave={this.explosionOut}
+            >
+              mes&nbsp;projets
+            </p>
+
         </div>
         <div className="slide-container">
           <img className="slide__img" src={slide3} alt="Wild Code School" />
-          <p
-            className="legend-slide tracking-in-contract-bck"
-            onMouseEnter={this.explosionIn}
-            onMouseLeave={this.explosionOut}
-          >
-            me <br /> contacter
-          </p>
+            <p
+              className="legend-slide tracking-in-contract-bck"
+              onMouseEnter={this.explosionIn}
+              onMouseLeave={this.explosionOut}
+            >
+              contact
+            </p>
         </div>
       </Carousel>
     );
