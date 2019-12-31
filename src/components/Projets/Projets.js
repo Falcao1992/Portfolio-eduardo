@@ -66,63 +66,69 @@ class Projets extends Component {
     const { projets } = this.state;
     return (
       <Controller>
-         <Scene triggerElement={".boxProjets"} classToggle={[".boxProjets", "fade-inProjets"]} reverse={false} offset={100} indicators={true}>
-      <div className="projets__content  ">
-        <div className="projets__texte boxProjets">
-          <h1 id="projets">Mes Projets</h1>
-          <p>
-            Voici un apercu des differents projets sur lesquelle j'ai pu
-            travailler depuis le début de mon apprentissage.
-          </p>
-        </div>
-        <div className="wrapper__content boxProjets ">
-          <div className="wrapper">
-            {projets.map(projet => (
-              <div key={projet.id} className={`item__6-0${projet.id}`}>
-                <img src={projet.screenshot} target="_blank" alt="" />
-                <div className="meta">
-                  <h2>{projet.name}</h2>
-                  <ul className="cta-list">
-                    <li className="cta-item">
-                      <a
-                        href={projet.netlify}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src={logoNetlify}
-                          alt="logo Git Hub"
-                          className="material-icons"
-                        />
-                      </a>
-                    </li>
-                    <li className="cta-item">
-                      <a
-                        href={projet.gitHub}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src={logoGitHub}
-                          alt="logo Git Hub"
-                          className="material-icons"
-                        />
-                      </a>
-                    </li>
-                    <li className="cta-item">
-                      <i className="material-icons">&#xE80D;</i>
-                    </li>
-                    <li className="cta-item">
-                      <i className="material-icons">&#xE5D4;</i>
-                    </li>
-                  </ul>
-                </div>
+        <Scene
+          triggerElement={".boxProjets"}
+          classToggle={[".boxProjets", "fade-inProjets"]}
+          reverse={false}
+          offset={100}
+          indicators={false}
+        >
+          <div className="projets__content  ">
+            <div className="projets__texte boxProjets">
+              <h1 id="projets">Mes Projets</h1>
+              <p>
+                Voici un apercu des differents projets sur lesquelle j'ai pu
+                travailler depuis le début de mon apprentissage.
+              </p>
+            </div>
+            <div className="wrapper__content boxProjets ">
+              <div className="wrapper">
+                {projets.map(projet => (
+                  <div key={projet.id} className={`item__6-0${projet.id}`}>
+                    <img src={projet.screenshot} target="_blank" alt="" />
+                    <div className="meta">
+                      <h2>{projet.name}</h2>
+                      <ul className="cta-list">
+                        <li className="cta-item">
+                          <a
+                            href={projet.netlify}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img
+                              src={logoNetlify}
+                              alt="logo Git Hub"
+                              className="material-icons"
+                            />
+                          </a>
+                        </li>
+                        <li className="cta-item">
+                          <a
+                            href={projet.gitHub}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img
+                              src={logoGitHub}
+                              alt="logo Git Hub"
+                              className="material-icons"
+                            />
+                          </a>
+                        </li>
+                        <li className="cta-item">
+                          <i className="material-icons">&#xE80D;</i>
+                        </li>
+                        <li className="cta-item">
+                          <i className="material-icons">&#xE5D4;</i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-      </div>
-      </Scene>
+        </Scene>
       </Controller>
     );
   }

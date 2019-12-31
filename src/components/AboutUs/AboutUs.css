@@ -9,42 +9,11 @@ h1 {
   width: 100%;
 }
 
-/* Section */
-
-.img1 {
-  background: url(./img/parallaxe1.png);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+h2 {
+  padding: 20px;
+  font-size: 30px;
+  font-family: "lato", sans-serif;
 }
-
-.titre__box1{
-  position: relative;
-}
-
-.titre__box1::before {
-  content: "";
-  position: absolute;
-  width: 15rem;
-  height: 15rem;
-  background: url(./img/photo-eduardo.png) no-repeat;
-  background-size: 100%;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -86%);
-}
-
-.WCD {
-  text-decoration: none;
-  color: #F76C6C;
-  font-weight: 700;
-}
-
-.WCD:hover {
-  text-decoration: underline;
-}
-
 
 .box {
   position: relative;
@@ -59,12 +28,7 @@ h1 {
   font-family: sans-serif;
   font-weight: 100;
   padding: 0.5rem;
-}
-
-h2 {
-  padding: 20px;
-  font-size: 30px;
-  font-family: "lato", sans-serif;
+  border-radius: 50px;
 }
 
 .date {
@@ -93,11 +57,48 @@ h2 {
   letter-spacing: 0.1rem;
   font-weight: 600;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .learn:hover {
   background: rgba(255, 255, 255, 0.9);
   color: black;
+}
+
+/* Premiere Section */
+
+.img1 {
+  background: url(./img/parallaxe1.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.titre__box1 {
+  position: relative;
+}
+
+.titre__box1::before {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  background: url(./img/photo-eduardo.png) no-repeat;
+  background-size: 100%;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -86%);
+}
+
+.WCD {
+  text-decoration: none;
+  color: #f76c6c;
+  font-weight: 700;
+}
+
+.WCD:hover {
+  text-decoration: underline;
 }
 
 /* Deuxieme section */
@@ -108,6 +109,80 @@ h2 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  overflow: hidden;
+}
+
+.container__logo {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, 25%);
+  padding: 5px 15px;
+}
+.logoJs {
+  padding-top: 20px;
+  height: 20vh;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+.logo {
+  margin: auto;
+  opacity: 1;
+  width: 100%;
+  align-self: center;
+  position: relative;
+}
+.logoHtml {
+  top: -950px;
+}
+.logoCss {
+  top: -990px;
+}
+.logoReact {
+  top: -750px;
+}
+.logoNode {
+  top: -750px;
+}
+.logoPhaser {
+  top: -950px;
+}
+.logoSql {
+  top: -950px;
+}
+.logoText {
+  grid-column: 2 / 5;
+  grid-row: 1 / 4;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  border-radius: 50px;
+}
+.learnGrid {
+  background: transparent;
+  margin-bottom: 20px;
+  color: #fff;
+  border: 2px solid rgba(151, 28, 28, 0.8);
+  padding: 10px;
+  transition: all 0.4s ease-in;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  grid-column: 2 / 5;
+  grid-row: 4 / 5;
+  cursor: pointer;
+}
+
+.learnGrid:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
 }
 
 /* Troisieme section */
@@ -120,10 +195,6 @@ h2 {
   background-attachment: fixed;
 }
 
-.logo{
-  width: 100px;
-}
-
 /* Animation */
 
 .box1 {
@@ -131,10 +202,7 @@ h2 {
   opacity: 0;
   transition: all 0.4s linear;
 }
-.box2 {
-  opacity: 0;
-  transition: all 0.4s linear;
-}
+
 .box3 {
   opacity: 0;
   transition: all 0.4s linear;
@@ -142,4 +210,43 @@ h2 {
 
 .fade-in {
   opacity: 1;
+}
+
+@media (min-width: 570px) { 
+  .logo {
+    
+    width: 80%;
+    
+  }
+}
+
+@media (min-width: 715px) { 
+  .logo {
+    
+    width: 70%;
+    
+  }
+}
+
+@media (min-width: 800px) { 
+  .logo {
+    
+    width: 60%;
+    
+  }
+}
+
+@media (min-width: 935px) { 
+  .logo {
+    
+    width: 50%;
+    
+  }
+}
+@media (min-width: 1100px) { 
+  .logo {
+    
+    width: 35%;
+    
+  }
 }

@@ -5,10 +5,15 @@
 }
 .projets__content{
   padding-bottom: 60px;
-  background-position: left;
-  background-size: cover;
   background-image: url(./img/backgroundProject.png);
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
 }
+
 
 .projets__texte {
   padding: 30px 10px;
