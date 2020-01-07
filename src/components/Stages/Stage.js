@@ -15,7 +15,7 @@ function Stage() {
   return (
     <div className="stage__content" id="stage">
       <div className={index === 1 ? "isVisible" : "notVisible"}>
-        <h1 className="question">pourquoi avoir choisis la reconversion ?</h1>
+        <h1 className="question">la reconversion, pourquoi ?</h1>
         <p className="reponse">
           Car pour moi ce métier regroupe énormément de point positif afin d'y
           avoir une carrière durable et épanouissante :{" "}
