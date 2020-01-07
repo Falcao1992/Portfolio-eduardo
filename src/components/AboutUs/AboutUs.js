@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Controller, Scene } from "react-scrollmagic";
-import { gsap, Bounce } from "gsap";
+import { gsap, Bounce, Power3 } from "gsap";
 
 import "./AboutUs.css";
 import cv from "./img/CV.png";
@@ -15,6 +15,7 @@ import logoSql from "./img/logoSql.png";
 
 function AboutUs() {
   let logoText = useRef(null);
+  let logoText2 = useRef(null);
   let logoHtmlRef = useRef(null);
   let logoCssRef = useRef(null);
   let logoNodeRef = useRef(null);
@@ -72,6 +73,10 @@ function AboutUs() {
     gsap.to(logoText, 3.2, {
       opacity: 1,
       ease: Bounce.easeOut
+    });
+    gsap.to(logoText2, 3.2, {
+      opacity: 0,
+      ease: Power3.easeOut
     });
   };
 
@@ -179,6 +184,15 @@ function AboutUs() {
             }}
           >
             Voici un apercu des languages et des frameworks que j'ai utilisé jusqu'à maintenant 
+          </p>
+          <p
+            className="logo logoText2"
+            ref={el => {
+              logoText2 = el;
+            }}
+          >
+            Au cours de mon apprentissage de développeur JavaScript à la Wild Code school nous avons eu plusieurs projet à réaliser 
+            en équipe et donc utlisé et découvrir des outlis adapté.
           </p>
           
           <button onClick={() => handleAnimation()} className="learnGrid">voir plus</button>

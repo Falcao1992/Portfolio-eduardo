@@ -24,7 +24,7 @@ li {
   width: 85%;
   margin: 0 auto;
   text-align: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   font-family: sans-serif;
   font-weight: 100;
@@ -58,7 +58,7 @@ ul {
 
 .button_stage {
   position: relative;
-  z-index: 5000;
+  z-index: 100;
   background: transparent;
   margin-top: 20px;
   color: rgb(255, 255, 255);
@@ -75,4 +75,13 @@ ul {
 .button_stage:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+}
+
+@media (min-width: 800px) { 
+  .isVisible {
+    width: 60%;
+  }
+  .reponse {
+    padding: 15px;
+  }
 }

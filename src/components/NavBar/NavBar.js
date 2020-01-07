@@ -14,6 +14,9 @@ class NavBar extends React.Component {
         <a className="menu-item" href="#aboutUs">
           Qui suis-je
         </a>
+        <a className="menu-item" href="#stage">
+          Stage
+        </a>
         <a className="menu-item" href="#projets">
           Projets
         </a>
