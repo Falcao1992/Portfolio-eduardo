@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Controller, Scene } from "react-scrollmagic";
-import { gsap, TweenMax, Bounce } from "gsap";
+import { gsap, Bounce } from "gsap";
 
 import "./AboutUs.css";
 import cv from "./img/CV.png";
@@ -23,55 +23,53 @@ function AboutUs() {
   let logoSqlRef = useRef(null);
 
   useEffect(() => {
-    console.log(logoText);
   }, []);
 
-  const handleAnimation = e => {
-    console.log("dans la fonction annimation");
+  const handleAnimation = () => {
 
-    gsap.to(logoCssRef, 3.8, {
+    gsap.to(logoCssRef, 3.2, {
       gridColumn: 5,
       gridRow: 1,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    gsap.to(logoHtmlRef, 3.8, {
+    gsap.to(logoHtmlRef, 3.2, {
       gridColumn: 1,
       gridRow: 1,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    gsap.to(logoReactRef, 3.8, {
+    gsap.to(logoReactRef, 3.2, {
       gridColumn: 1,
       gridRow: 2,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    gsap.to(logoNodeRef, 3.8, {
+    gsap.to(logoNodeRef, 3.2, {
       gridColumn: 5,
       gridRow: 2,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    gsap.to(logoPhaserRef, 3.8, {
+    gsap.to(logoPhaserRef, 3.2, {
       gridColumn: 1,
       gridRow: 3,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    gsap.to(logoSqlRef, 3.8, {
+    gsap.to(logoSqlRef, 3.2, {
       gridColumn: 5,
       gridRow: 3,
       top: 0,
       rotate: 360,
       ease: Bounce.easeOut
     });
-    gsap.to(logoText, 3.8, {
+    gsap.to(logoText, 3.2, {
       opacity: 1,
       ease: Bounce.easeOut
     });
@@ -180,10 +178,10 @@ function AboutUs() {
               logoText = el;
             }}
           >
-            voici un apercu des languages et des frameworks que j'ai utilisé jusqu'à maintenant 
+            Voici un apercu des languages et des frameworks que j'ai utilisé jusqu'à maintenant 
           </p>
           
-          <button onClick={e => handleAnimation(e)} className="learnGrid">voir plus</button>
+          <button onClick={() => handleAnimation()} className="learnGrid">voir plus</button>
         </div>
       </div>
     </>
