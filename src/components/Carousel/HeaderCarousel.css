@@ -3,11 +3,28 @@
 }
 .slide__img {
   height: 100vh;
+  width: 50%;
   object-fit: cover;
+  
 }
 .slide-container {
+  display: flex;
+  justify-content: flex-end;
   height: 100%;
   background-position: bottom;
+}
+.carousel .slide img {
+  width: 67%;
+  vertical-align: top;
+  border: 0;
+  border-radius: 0% 0% 0% 85%;
+}
+.carousel .slide {
+  min-width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  background-color: transparent;
 }
 
 .selected {
@@ -16,20 +33,28 @@
 
 .legend-slide {
   font-family: "Poppins", sans-serif;
-  position: absolute; /* postulat de départ */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
-  color: white;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: rgb(0, 0, 0);
   font-size: 1.7rem;
-  background-color: rgba(0, 0, 0, 0.215);
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 10px;
   padding: 20px;
-  text-align: center;
   letter-spacing: 4px;
   cursor: pointer;
+  background-color: white;
+}
+.slide__lien {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  color: rgb(235, 11, 11);
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+
 }
 
 .legend-slide span {

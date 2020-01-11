@@ -17,6 +17,7 @@ function App() {
       <Stage />
       <Projets />
       
+      
     </div>
   );
 }

@@ -8,6 +8,7 @@ import charming from "charming";
 import slide1 from "./img/slide1.jpg";
 import slide2 from "./img/slide2.jpg";
 import slide3 from "./img/slide3.jpg";
+import cv from "../AboutUs/img/CV.png";
 
 class HeaderCarousel extends Component {
   // FONCTION POUR FAIRE "EXPLOSER" LES LETTRES
@@ -45,12 +46,12 @@ class HeaderCarousel extends Component {
       <Carousel
         className="constainer-caroussel"
         autoPlay={true}
-        interval={8000}
+        interval={10000}
         infiniteLoop={true}
         showArrows={true}
         showThumbs={false}
         showStatus={false}
-        transitionTime={2000}
+        transitionTime={3000}
         showIndicators={false}
       >
         <div className="slide-container">
@@ -64,6 +65,7 @@ class HeaderCarousel extends Component {
               {" "}
               qui&nbsp;suis&nbsp;je&nbsp;?
             </p>
+            <a href="#aboutUs"><p className="slide__lien">Voir plus ></p></a>
           
         </div>
         <div className="slide-container" id="home">
@@ -75,6 +77,7 @@ class HeaderCarousel extends Component {
             >
               mes&nbsp;projets
             </p>
+            <a href="#projets"><p className="slide__lien">Voir plus ></p></a>
 
         </div>
         <div className="slide-container">
@@ -86,6 +89,7 @@ class HeaderCarousel extends Component {
             >
               contact
             </p>
+            <a href={cv}><p className="slide__lien">Voir CV ></p></a>
         </div>
       </Carousel>
     );

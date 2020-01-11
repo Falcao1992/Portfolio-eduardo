@@ -1,8 +1,9 @@
 li {
   list-style: none;
+  text-align: start;
 }
 .stage__content {
-  height: 120vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
