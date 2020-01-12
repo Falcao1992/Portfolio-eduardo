@@ -191,8 +191,8 @@ function AboutUs() {
               logoText2 = el;
             }}
           >
-            Au cours de mon apprentissage de développeur JavaScript à la Wild Code school nous avons eu plusieurs projet à réaliser 
-            en équipe et donc utlisé et découvrir des outlis adapté.
+            Au cours de mon apprentissage à la Wild Code school nous avons eu plusieurs projet à réaliser 
+            en équipe et par l'occasion nous avons découvert de nouvelles technologies.
           </p>
           
           <button onClick={() => handleAnimation()} className="learnGrid">voir plus</button>

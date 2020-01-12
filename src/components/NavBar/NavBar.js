@@ -1,7 +1,6 @@
 import React from "react";
 import { bubble as Menu } from "react-burger-menu";
 import "./NavBar.css";
-import cv from "../AboutUs/img/CV.png";
 
 class NavBar extends React.Component {
   render() {
@@ -20,7 +19,7 @@ class NavBar extends React.Component {
         <a className="menu-item" href="#projets">
           Projets
         </a>
-        <a className="menu-item" href={cv} target="_blank" without="true" rel="noopener noreferrer">
+        <a className="menu-item" href="#footer">
           Contact
         </a>
       </Menu>

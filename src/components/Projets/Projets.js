@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import "./Projets.scss";
+import Footer from "./footer/Footer";
+
 import wildCircus from "./img/wild-Circus.png";
 import locationAppartements from "./img/location-appartements.png";
 import mame from "./img/MAME-screenshot.png";
 import wildSpace from "./img/Wild-Space-screenshot.png";
 import horrorTeaser from "./img/Horror-Teaser-screenshot.png";
 import miniGameNoel from "./img/mini-game-noel.PNG";
-import logoGitHub from "./img/logo-git_hub.png";
-import logoNetlify from "./img/logoNetlify.png";
+
 import { Controller, Scene } from "react-scrollmagic";
 
 class Projets extends Component {
@@ -20,7 +21,7 @@ class Projets extends Component {
           id: 1,
           name: "Wild Circus",
           screenshot: wildCircus,
-          netlify: "https://mame-wild-project.netlify.com",
+          netlify: wildCircus,
           gitHub: "https://github.com/Falcao1992/MAME-Project-1"
         },
         {
@@ -85,15 +86,21 @@ class Projets extends Component {
               <div className="wrapper">
                 {projets.map(projet => (
                   <div key={projet.id} className={`item__6-0${projet.id}`}>
-                    <a href={projet.netlify} target="_blank"
-                  without="true"
-                  rel="noopener noreferrer"><img src={projet.screenshot} target="_blank" alt="" /></a>
+                    <a
+                      href={projet.netlify}
+                      target="_blank"
+                      without="true"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={projet.screenshot} target="_blank" alt="" />
+                    </a>
                   </div>
                 ))}
               </div>
             </div>
           </div>
         </Scene>
+        <Footer />
       </Controller>
     );
   }

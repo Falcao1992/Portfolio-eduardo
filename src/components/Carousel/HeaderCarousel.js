@@ -45,13 +45,13 @@ class HeaderCarousel extends Component {
     return (
       <Carousel
         className="constainer-caroussel"
-        autoPlay={true}
+        autoPlay={false}
         interval={10000}
         infiniteLoop={true}
         showArrows={true}
         showThumbs={false}
         showStatus={false}
-        transitionTime={3000}
+        transitionTime={1500}
         showIndicators={false}
       >
         <div className="slide-container">

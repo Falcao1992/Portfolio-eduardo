@@ -78,7 +78,12 @@ ul {
   color: rgb(0, 0, 0);
 }
 
-@media (min-width: 800px) { 
+.lien__footer {
+  text-decoration: none;
+  color: #4aaaff;
+}
+
+@media (min-width: 800px) {
   .isVisible {
     width: 60%;
   }

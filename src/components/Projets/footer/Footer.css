@@ -1,0 +1,33 @@
+.footer__content {
+  font-family: "lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding: 15px 0px;
+}
+
+.footer__text p {
+  padding: 7px;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.logoFooter {
+  width: 5%;
+  padding: 3px;
+  margin: 0px 5px;
+}
+
+@media (min-width: 850px) {
+    .logoFooter {
+        width: 2%;
+        margin: 0px 10px;
+      }
+
+      .footer__logo__content{
+        padding: 15px 0px;
+      }
+
+}

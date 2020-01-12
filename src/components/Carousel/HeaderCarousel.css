@@ -45,6 +45,7 @@
   letter-spacing: 4px;
   cursor: pointer;
   background-color: white;
+  line-height: 1.9rem;
 }
 .slide__lien {
   position: absolute;
@@ -54,11 +55,15 @@
   font-size: 1.5rem;
   cursor: pointer;
   font-weight: 700;
+}
 
+.slide__lien:hover {
+  text-decoration: underline;
 }
 
 .legend-slide span {
   font-family: "Poppins", sans-serif;
   display: inline-block;
   font-size: 1.7rem;
+  text-decoration: underline red;
 }

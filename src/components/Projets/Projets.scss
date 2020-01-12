@@ -34,7 +34,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 25px;
+  grid-gap: 10px;
   counter-reset: grid-item;
 }
 .wrapper img {
@@ -84,7 +84,6 @@
 }
 
 %center {
-  border: 1px solid white;
   display: flex;
   vertical-align: middle;
   justify-content: center;
